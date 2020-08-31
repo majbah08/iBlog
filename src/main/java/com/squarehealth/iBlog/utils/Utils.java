@@ -1,0 +1,15 @@
+package com.squarehealth.iBlog.utils;
+
+import org.springframework.web.context.request.ServletWebRequest;
+import org.springframework.web.context.request.WebRequest;
+
+public class Utils {
+	
+	public static String resolvePathFromWebRequest(WebRequest request) {
+        try {
+            return ((ServletWebRequest) request).getRequest().getAttribute("javax.servlet.forward.request_uri").toString();
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+}
