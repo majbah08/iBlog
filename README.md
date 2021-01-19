@@ -1,3 +1,3 @@
 # iBlog
 
-Dummy Practise Project 
+Dummy Practice Project 
